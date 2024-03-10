@@ -1,0 +1,19 @@
+[package]
+name = "fusion"
+version = "0.1.0"
+authors = []
+edition = "2021"
+
+[lib]
+name = "fusion"
+path = "src/lib.rs"
+crate-type = ["cdylib"]
+
+[dependencies]
+anyhow = "1"
+chrono = "0.4"
+datafusion = "36"
+rustler = "0.31.0"
+thiserror = "1"
+tokio = { version = "1", features = ["full"] }
+
